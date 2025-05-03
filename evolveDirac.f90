@@ -89,11 +89,17 @@ subroutine evolveDirac
    open(23, file = './' // trim(dirname) // '/G1.t')
    open(24, file = './' // trim(dirname) // '/G2.t')
 
+   open(28, file = './' // trim(dirname) // '/a.t')
+   open(29, file = './' // trim(dirname) // '/alpha.t')
+
    open(30, file = './' // trim(dirname) // '/a.rt')
    open(31, file = './' // trim(dirname) // '/alpha.rt')
    open(32, file = './' // trim(dirname) // '/metric.rt')
    open(33, file = './' // trim(dirname) // '/adot.rt')
-   open(35, file = './' // trim(dirname) // '/error.t')
+   open(35, file = './' // trim(dirname) // '/errorl2.t')
+   open(36, file = './' // trim(dirname) // '/errorl3.t')
+   open(37, file = './' // trim(dirname) // '/errorl4.t')
+   open(38, file = './' // trim(dirname) // '/errorin.t')
 
    open(40, file = './' // trim(dirname) // '/masa.rt')
    open(41, file = './' // trim(dirname) // '/masa.t')
@@ -243,6 +249,9 @@ subroutine evolveDirac
    close(32)
    close(33)
    close(35)
+   close(36)
+   close(37)
+   close(38)
 
    close(40)
    close(41)

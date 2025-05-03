@@ -1,4 +1,4 @@
-FLAGS = -O2 -ffree-form -w 
+FLAGS = -O2 -ffree-form -w -Ofast
 
 OBJS = arrays.o saverRT.o saverT.o evolveDirac.o evolveEscalar.o evolveProca.o fuenteDirac.o fuenteEscalar.o \
 		fuenteProca.o initialDirac.o initialEscalar.o initialProca.o main.o vars.o metricEscalar.o \

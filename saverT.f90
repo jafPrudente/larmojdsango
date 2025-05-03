@@ -35,7 +35,14 @@ subroutine wardaditoStatic
       write(23,"(2ES16.8)") t, maxval( G1 )
       write(24,"(2ES16.8)") t, maxval( G2 )
 
-      write(35,"(2ES16.8)") t, maxval( abs(adot) )
+      write(28,"(2ES16.8)") t, a(Nr)
+      write(29,"(2ES16.8)") t, alpha(2)
+
+      write(35,"(2ES16.8)") t, (sum(abs(adot) ** 2) / Nr) ** (1.0D0 / 2.0D0)
+      write(36,"(2ES16.8)") t, (sum(abs(adot) ** 3) / Nr) ** (1.0D0 / 3.0D0)
+      write(37,"(2ES16.8)") t, (sum(abs(adot) ** 4) / Nr) ** (1.0D0 / 4.0D0)
+      write(38,"(2ES16.8)") t, maxval( abs(adot) )
+
       write(41,"(2ES16.8)") t, (rmax/dos)*( uno - (uno/a(Nr)**2) )
 
 
